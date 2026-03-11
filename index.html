@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:wght@100..900&display=swap"
         rel="stylesheet">
@@ -21,8 +22,7 @@
         <header class="header">
             <div class="container header-bar">
                 <div class="header_logo">
-                    <img src="/images/Frame 83.png" alt="img">
-                    <a class="brand" href="#">Cargo Calc</a>
+                    <span></span> <a class="brand" href="#">Stock-Control</a>
                 </div>
                 <nav class="header-center">
                     <a href="#home" class="nav-link">Главная</a>
@@ -51,161 +51,188 @@
                     </label>
                     <nav class="nav">
                         <ul>
-                            <li><a href="#home">Главная</a></li>
-                            <li><a href="#about">О нас</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                            <li><a href="#features">Функционал</a></li>
-                            <li><a href="#benifist">Преимущества проет</a></li>
-                            <li><a href="#customer">Отзывы клиентов</a></li>
-                            <li><a href="#demo">Демо</a></li>
+                            <li onclick="document.getElementById('nav-toggle').checked=false"><a
+                                    href="#home">Главная</a></li>
+                            <li><a href="#about" onclick="document.getElementById('nav-toggle').checked=false">О нас</a>
+                            </li>
+                            <li><a href="#demo" onclick="document.getElementById('nav-toggle').checked=false">Демо</a>
+                            </li>
+                            <li><a href="#contacts"
+                                    onclick="document.getElementById('nav-toggle').checked=false">Контакты</a></li>
+                            <li><a href="#features"
+                                    onclick="document.getElementById('nav-toggle').checked=false">Преимущества</a></li>
+                            <li><a href="#customer" onclick="document.getElementById('nav-toggle').checked=false">Отзывы
+                                    клиентов</a></li>
+                            <li><a href="#benifist"
+                                    onclick="document.getElementById('nav-toggle').checked=false">Функционал проекта</a>
+                            </li>
+
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <section id="home">
-            <div class="container home">
+            <div class="container home reveal">
+                <div class="home-media top">
+                    <img src="/images/fire-dynamic-clay.png" alt="">
+                    <img src="/images/bag-dynamic-clay.png" alt="">
+                    <img src="/images/chart-dynamic-clay.png" alt="">
+                </div>
                 <div class="home-content">
                     <div class="content-title"></div>
-                    <h1>Автоматизация таможенных складов</h1>
-                    <p>Мы разработали удобное и мощное решение для автоматизации таможенных складов. Оно помогает
-                        упростить
-                        учет
-                        грузов, управлять тарифами и вести прозрачный расчет услуг.</p>
+                    <h1>Stock-Control — умная система управления складом</h1>
+                    <p>Stock-Control создан для того, чтобы компании перестали терять время и деньги из-за хаоса на
+                        складе. Мы сделали управление запасами максимально простым, прозрачным и точным — чтобы вы могли
+                        сосредоточиться не на поиске товара, а на росте бизнеса.</p>
                     <button class=""><a href="#">Попробовать сейчас</a></button>
                 </div>
-                <div class="home-media">
-                    <div class="home_img">
-                        <img src="/images/35be8be132c04d689141d79ccf0a2d7bfb3ffdca (1).jpg" alt="img">
-                    </div>
+                <div class="home-media bottom">
+                    <img src="/images/flag-dynamic-clay.png" alt="">
+                    <img src="/images/dollar-dollar-clay.png" alt="">
+                    <img src="/images/clock-dynamic-clay@2x.png" alt="">
                 </div>
             </div>
         </section>
-        <section id="#about">
-            <div class="container about">
-                <h1 class="title">О нас</h1>
+        <section id="about">
+            <div class="container about reveal">
+                <h1 class="title">Привет, мы <span>Stock-Control!</span></h1>
                 <div class="about_card">
                     <div class="card">
-                        <img src="/images/Frame 90 (1).png" alt="">
-                        <p>Мы — команда IT-специалистов с опытом в разработке бизнес-решений для логистики и складской
-                            отрасли.</p>
-                        <span></span>
+                        <h3>Кто мы?</h3>
+                        <p><span>Мы</span> — команда IT-специалистов, создающая простые и эффективные цифровые решения
+                            для реального бизнеса.</p>
+                        <span class="ellipse"></span>
                     </div>
                     <div class="card">
-                        <img src="/images/cube.png" alt="">
-                        <p>Наша цель — упростить и ускорить работу таможенных складов с помощью современных технологий.
-                            Мы
-                            понимаем реальные задачи бизнеса и предлагаем удобные инструменты, которые экономят время,
-                            снижают ошибки и повышают эффективность.</p>
-                        <span></span>
+                        <h3>Какова наша цель?</h3>
+                        <p><span>Наша цель</span> — помочь компаниям управлять складами проще, быстрее и точнее. Мы
+                            хотим избавить бизнес от ошибок, рутинных операций и хаоса в учёте.</p>
+                        <span class="ellipse"></span>
                     </div>
-                    <div class="card">
-                        <img src="/images/screen-share (1).png" alt="">
-                        <p>Наше приложение уже внедряется на действующих складах и успешно помогает автоматизировать
-                            повседневные процессы — от расчета тарифов до учёта заявок.</p>
-                        <span></span>
+                    <div class="card div3">
+                        <p><span>Мы</span> понимаем, как важно держать всё под контролем: от остатков до поставок. Поэтому разработали систему, которая:</p>
+                        <p>- Показывает остатки в реальном времени;</p>
+                        <p> - Автоматически предупреждает о низких запасах;</p>
+                        <p> - Хранит историю закупок и продаж;</p>
+                        <p>- Поддерживает работу с несколькими складами;</p>
+                        <p>- Формирует понятные инвентарные отчёты;</p>
+                        <p>- Управляет ролями и доступом сотрудников;</p>
+                        <p>- Работает со сканерами штрихкодов для максимальной скорости.</p>
+                        <span class="ellipse"></span>
                     </div>
 
                 </div>
             </div>
         </section>
         <section id="features">
-            <div class="container features">
-                <h1 class="title">Что умеет наше приложение?</h1>
-                <div class="features_card">
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/users-svgrepo-com 2.png" alt="img">
-                            <h2>Управление пользователями</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+            <div class="container features reveal">
+                <h1 class="title">Что умеет <span>наше приложение?</span></h1>
+
+                <div class="accordion-wrapper">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check1" checked>
+                        <label class="accordion-label" for="check1">Отслеживание остатков в реальном времени</label>
+                        <div class="accordion-content">
+                            <p>Это функция, которая позволяет видеть актуальное количество товаров на складе или в
+                                магазине в каждый момент времени, без задержек и ручных обновлений.</p>
                         </div>
-                        <p>— Гибкая система доступа для сотрудников с разграничением прав.</p>
                     </div>
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/add-circle-svgrepo-com.png" alt="img">
-                            <h2>Добавление услуг, товаров и тарифов</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check2">
+                        <label class="accordion-label" for="check2">Автоматическое предупреждение о низких
+                            запасах</label>
+                        <div class="accordion-content">
+                            <p>Эта функция автоматически уведомляет пользователя о низких запасах товаров, позволяя
+                                своевременно пополнять их и избегать дефицита.</p>
                         </div>
-                        <p>— Возможность формировать собственные тарифные планы, настраивать цены и учитывать специфику
-                            разных типов грузов. </p>
                     </div>
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/Vector.png" alt="img">
-                            <h2>Работа с организациями</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check3">
+                        <label class="accordion-label" for="check3">История закупок и продаж</label>
+                        <div class="accordion-content">
+                            <p>Эта функция позволяет отслеживать все операции с товарами, включая закупки и продажи, что
+                                помогает в анализе и планировании.</p>
                         </div>
-                        <p>— Добавление и управление клиентами, партнерами и поставщиками в удобном интерфейсе. </p>
                     </div>
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/diagram-svgrepo-com.png" alt="images">
-                            <h2>Дашборд и аналитика</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check4">
+                        <label class="accordion-label" for="check4">Поддержка нескольких складов</label>
+                        <div class="accordion-content">
+                            <p>Эта функция позволяет отслеживать все операции с товарами, включая закупки и продажи, что
+                                помогает в анализе и планировании.</p>
                         </div>
-                        <p>— Визуализация ключевых показателей: количество заявок, доходность, загруженность склада и
-                            другие
-                            важные метрики.</p>
                     </div>
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/archive-svgrepo-com.png" alt="img">
-                            <h2>Работа с заявками и архив заявок</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check5">
+                        <label class="accordion-label" for="check5">Инвентарные отчёты</label>
+                        <div class="accordion-content">
+                            <p>Эта функция позволяет отслеживать все операции с товарами, включая закупки и продажи, что
+                                помогает в анализе и планировании.</p>
                         </div>
-                        <p>— Удобный учет всех обработанных и текущих заявок, поиск и фильтрация по ключевым параметрам.
-                        </p>
                     </div>
-                    <div class="card">
-                        <div class="features_title">
-                            <img src="/images/export-svgrepo-com.png" alt="img">
-                            <h2>Экспорт данных</h2>
-                            <img src="/images/Frame 75.png" alt="img">
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check6">
+                        <label class="accordion-label" for="check6">Роли и доступы сотрудников</label>
+                        <div class="accordion-content">
+                            <p>Эта функция позволяет отслеживать все операции с товарами, включая закупки и продажи, что
+                                помогает в анализе и планировании.</p>
                         </div>
-                        <p>— Выгрузка отчетов в Excel для удобной работы с финансами и аналитикой. </p>
-                        <p>— Формирование актов с возможностью экспорта в Excel, что облегчает...</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="radio" name="radio-a" id="check7">
+                        <label class="accordion-label" for="check7">Интеграция со сканером штрихкодов</label>
+                        <div class="accordion-content">
+                            <p>Эта функция позволяет отслеживать все операции с товарами, включая закупки и продажи, что
+                                помогает в анализе и планировании.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="benifist">
-            <div class="container benifist">
-                <h1 class="title">Как это помогает бизнесу?</h1>
+            <div class="container benifist  reveal">
+                <h1 class="title">Как это помогает <span>бизнесу?</span></h1>
                 <div class="benifist_card">
                     <div class="card">
-                        <img src="/images/calender-dynamic-color1сс.png" alt="img">
-                        <p>Исключает рутинные ошибки при расчете тарифов</p>
+                        <img src="/images/money-bag-dynamic-clay.png" alt="img" />
+                        <p>Снижение потерь и расходов</p>
                     </div>
                     <div class="card">
-                        <img src="/images/forward-dynamic-color2сс.png" alt="img">
-                        <p>Ускоряет обработку заявок и учет грузов</p>
+                        <img src="/images/explorer-dynamic-clayx.png" alt="img" />
+                        <p>Экономия времени сотрудников</p>
                     </div>
                     <div class="card">
-                        <img src="/images/1ed280c6096efbb1e8132dfc65ebc6266937e03f.png" alt="img">
-                        <p>Автоматизирует документооборот и сокращает время на отчетность
-                        </p>
+                        <img src="/images/rocket-dynamic-clay.png" alt="img" />
+                        <p>Рост продаж</p>
                     </div>
                     <div class="card">
-                        <img src="/images/88cac6482492872f61ea9adcc93e3dd46d5998e5.png" alt="img">
-                        <p>Делает финансовый учет более прозрачным</p>
+                        <img src="/images/folder-dynamic-clay.png" alt="img" />
+                        <p>Прозрачность и контроль</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="demo">
-            <div class="container demo">
-                <h1 class="title">Опробовать демо</h1>
+            <div class="container demo reveal">
+                <h1 class="title">Хотите опробовать <span>демо?</span></h1>
                 <div class="demo-card">
                     <div class="demo-info">
-                        <h1>Попробуйте сами — это удобно!</h1>
-                        <p>Никаких рисков: просто оставьте заявку и получите доступ к демо-версии.</p>
-                        <p>Оцените, как легко автоматизировать работу склада.</p>
-                        <div>
-                            <img src="/images/Frame 117 (1).png" alt="img">
-                            <img src="/images/Frame 118.png" alt="img">
-                        </div>
+                        <h1>Попробуйте <span>Stock-Control</span> в действии — без обязательств и оплаты</h1>
+                        <p>
+                            <img src="/images/Search (1).png" alt="img" />
+                            Проведите тестовый учёт товара
+                        </p>
+                        <p>
+                            <img src="/images/Grid Four 02 (1).png" alt="img" />
+                            Cистема показывает остатки в реальном времени
+                        </p>
+                        <p>
+                            <img src="/images/View Board.png" alt="img" />
+                            Сформируйте пробный отчёт и оцените аналитику
+                        </p>
                     </div>
+
                     <form class="form card" action="#" method="post">
                         <div class="form-row one">
                             <div>
@@ -238,7 +265,7 @@
             </div>
         </section>
         <section id="customer">
-            <div class="container  ">
+            <div class="container  reveal">
                 <h1 class="title">
                     Что говорят о нас?
                 </h1>
@@ -246,23 +273,18 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -270,23 +292,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -294,23 +311,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -318,23 +330,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -342,23 +349,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -366,23 +368,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -390,23 +387,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -414,23 +406,18 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
@@ -438,29 +425,23 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="/images/image 2.png" alt="img">
-                                <p>
-                                    Раньше мы вели учёт вручную, и на обработку одной заявки уходило до 30 минут. С
-                                    новым
-                                    приложением всё автоматизировано — время сократилось в 3 раза, ошибки исчезли.
-                                    Отчёты
-                                    формируются в один клик, а дашборд помогает контролировать склад в реальном времени.
-                                    Отличное
-                                    решение для нашей сферы!
-                                </p>
+                                <img src="/images/image 2 (2).png" alt="img">
+                                <p>Раньше мы вели склад вручную в таблицах, и это постоянно приводило к ошибкам и
+                                    потерям. С переходом на Stock-Control учёт стал прозрачным, сотрудники тратят меньше
+                                    времени на инвентаризацию, а я всегда вижу реальные остатки. Это сильно упростило
+                                    работу и помогло нам избежать лишних расходов. </p>
                                 <div class="card_row">
                                     <span>
-                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627.png" alt="img">
+                                        <img src="/images/c74eb4fa83f1606fa21a1ca312243f9284535627 (1).png" alt="img">
                                     </span>
                                     <div>
-                                        <h2>Алексей Петров</h2>
-                                        <p>Руководитель BLG Logistics</p>
+                                        <h2>Игорь Смирнов</h2>
+                                        <p>Руководитель TexnoMarket</p>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="swiper_row">
@@ -471,8 +452,8 @@
             </div>
         </section>
         <section id="contacts">
-            <div class="container contacts">
-                <h1 class="title">Контакты</h1>
+            <div class="container contacts reveal">
+                <h1 class="title"><span>Контакты</span></h1>
                 <div class="card">
                     <div class="contacts_text">
                         <h1>Есть вопросы или хотите обсудить внедрение?</h1>
@@ -481,30 +462,29 @@
                     <div class="contacts_info">
                         <div>
                             <img src="/images/Message 36.png" alt="img"> <span>Email: </span><a
-                                href="#"> company@mail.com</a>
+                                href="mailto:softium@yahoo.com">softium@yahoo.com</a>
                         </div>
                         <div>
-                            <img src="/images/Calling 1.png" alt="img"> <span>Телефон: </span><a href="#">+998 00 000
-                                00 00</a>
+                            <img src="/images/Calling 1.png" alt="img"> <span>Телефон: </span><a href="tel:+998975000501">+998 97 500 05 01</a>
                         </div>
                         <div>
                             <img src="/images/Discovery 2.png" alt="img"> <span>Наш сайт: </span><a
-                                href="#">www.site.com</a>
+                                href="https://softium.uz/">softium.uz</a>
                         </div>
                     </div>
                     <div class="contacts_icon">
                         <span>
-                            <img src="/images/Frame 135.png" alt="img">
+                            <img src="/images/Frame 135 (2).png" alt="img">
                         </span>
                         <span>
-                            <img src="/images/Frame 134 (1).png" alt="img">
+                            <img src="/images/Frame 134 (2).png" alt="img">
                         </span>
                         <span>
-                            <img src="/images/Frame 133.png" alt="img">
+                            <img src="/images/Frame 133 (1).png" alt="img">
                         </span>
                     </div>
-                    <img src="/images/_.png" alt="img" class="image">
-                    <img src="/images/_ (2).png" alt="img" class="image1">
+                    <img src="/images/_ (4).png" alt="img" class="image">
+                    <img src="/images/_ (5).png" alt="img" class="image1">
                 </div>
             </div>
         </section>
@@ -513,13 +493,13 @@
                 <div class="footer_info">
                     <div>
                         <h1>Отдел продаж</h1>
-                        <p>+998 00 000 00 00</p>
-                        <p><a href="#">support@mail.com</a></p>
+                        <p><a href="tel:+998975000501">+998 97 500 05 01</a></p>
+                        <p><a href="mailto:support@mail.com">softium@yahoo.com</a></p>
                     </div>
-                    <div><img src="/images/Frame 148.png" alt=""></div>
+                    <div><img src="/images/Frame 148 (1).png" alt=""></div>
                 </div>
                 <div class="footer_row">
-                    <p>© 2025 Cargo Calc. Все права защищены.</p>
+                    <p>© 2025 Stock-Control. Все права защищены.</p>
                     <h1>© SOFTIUM 2025</h1>
                 </div>
             </div>
@@ -555,6 +535,23 @@
             }
 
         });
+
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll(".reveal");
+
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add("animate__animated", "animate__fadeInUp");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("load", revealOnScroll);
     </script>
 </body>
 
